@@ -1,0 +1,44 @@
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 20px;
+  }
+  15% {
+    left: 100px;
+    top: 20px;
+  }
+
+  85% {
+    left: 20px;
+    top: 20px;
+  }
+  100% {
+    left: -100%;
+    top: 20px;
+  }
+}
+
+#toast-container {
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  left: 20px;
+}
+
+.toast {
+  position: fixed;
+  height: 70px;
+  width: 250px;
+  background-color: #00bfa6;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  z-index: 1000;
+  animation-name: example;
+  animation-duration: 3s;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

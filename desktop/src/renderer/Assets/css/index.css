@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Panda';
+  src: local('Panda'), url(../fonts/Panda/Panda.ttf) format('truetype');
+}
+html {
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Panda;
+  user-select: none;
+
+  /* font-family: 'Cairo-reg'; */
+}
+
+.icon {
+  transition: 0.3s ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.1);
+  color: #343434;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.create-group-input {
+  width: 100%;
+  outline: none;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+
+  padding: 3px 10px;
+  color: #444;
+}
+
+.create-group-label {
+  margin: 0px 0 10px 0;
+  color: #666;
+}
+.create-group-wrapper {
+  padding: 10px;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.create-group-btn {
+  padding: 12px 40px;
+  outline: none;
+  margin: 20px 0px;
+  border-radius: 10px;
+  color: #fff;
+  position: sticky;
+  bottom: 0;
+}
+.create-group-btn:hover {
+  cursor: pointer;
+}
+
+.img-ms {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.drg {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-app-region: drag;
+}
